@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8"?>
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/nav_graph"
+    app:startDestination="@id/moviesNavigation">
+
+    <navigation
+        android:id="@+id/moviesNavigation"
+        app:startDestination="@id/moviesListDestination">
+
+        <fragment
+            android:id="@+id/moviesListDestination"
+            android:name="com.alfonsHoz.movies.ui.fragments.MoviesListFragment"
+            android:label="moviesListLabel"
+            tools:layout="@layout/fragment_movies_list" />
+
+    </navigation>
+
+</navigation>
